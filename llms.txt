@@ -1,0 +1,20 @@
+# group-terminal
+
+> Terminal-based group chat system for testing AI agent integrations
+
+`group-terminal` is a minimalistic, terminal-based group chat system designed for testing and
+prototyping AI service integrations. It provides a zero-configuration WebSocket-based chat server
+and Rich-powered terminal clients that eliminate authentication, databases, and user management
+complexity. Build and test server-side message handlers that respond to group chat messages with
+immediate visual feedback. Unix-specific (uses termios, will not work on Windows).
+
+
+## User Guide
+
+- [User Guide](https://gradion-ai.github.io/group-terminal/index.md): Overview and getting started guide
+
+## API Documentation
+
+- [Server](https://gradion-ai.github.io/group-terminal/api/server/index.md): Server API reference
+- [Client](https://gradion-ai.github.io/group-terminal/api/client/index.md): Client API reference
+
