@@ -1,4 +1,4 @@
-# group-terminal
+# Group Terminal
 
 > Terminal-based group chat system for testing AI agent integrations
 
