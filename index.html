@@ -555,11 +555,11 @@
 
 
 <h1 id="introduction">Introduction</h1>
-<p><code>group-terminal</code> is a minimalistic, terminal-based group chat system designed for testing and prototyping AI service integrations. Most group chat systems require authentication, databases, and user management before you can test a single message handler or prototype collaboration of user groups with AI. <code>group-terminal</code> eliminates this complexity by providing a minimal WebSocket-based chat server and <a href="https://github.com/Textualize/rich">Rich</a>-powered terminal clients that let you focus on testing your integration logic rather than infrastructure setup.</p>
+<p>Group Terminal is a minimalistic, terminal-based group chat system designed for testing and prototyping AI service integrations. Most group chat systems require authentication, databases, and user management before you can test a single message handler or prototype collaboration of user groups with AI. Group Terminal eliminates this complexity by providing a minimal WebSocket-based chat server and <a href="https://github.com/Textualize/rich">Rich</a>-powered terminal clients that let you focus on testing your integration logic rather than infrastructure setup.</p>
 <p>The project delivers four capabilities to accelerate development workflows. A zero-configuration design means no authentication or database setup is required. Server-side message handlers let you build and test services that respond to group chat messages. The Rich-based terminal interface provides immediate visual feedback with configurable colors for different message types. Finally, the explicit testing-focused design ensures you spend time building features rather than maintaining production concerns like security or persistence.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><code>group-terminal</code> uses <a href="https://docs.python.org/3/library/termios.html">termios</a> for terminal control and is Unix-specific. It will not work on Windows systems.</p>
+<p>Group Terminal uses <a href="https://docs.python.org/3/library/termios.html">termios</a> for terminal control and is Unix-specific. It will not work on Windows systems.</p>
 </div>
 <h2 id="installation">Installation</h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>group-terminal
