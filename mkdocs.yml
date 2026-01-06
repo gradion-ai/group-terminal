@@ -5,7 +5,7 @@ site_url: https://gradion-ai.github.io/group-terminal/
 repo_name: gradion-ai/group-terminal
 repo_url: https://github.com/gradion-ai/group-terminal
 
-copyright: Copyright &copy; 2025 Gradion AI
+copyright: Copyright &copy; 2025-2026 Gradion AI
 
 theme:
   name: material
@@ -84,10 +84,7 @@ plugins:
           - api/client.md: Client API reference
 
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
+  - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.snippets:
       dedent_subsections: true
