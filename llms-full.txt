@@ -23,7 +23,7 @@ Group Terminal uses [termios](https://docs.python.org/3/library/termios.html) fo
 
 ## Installation
 
-```bash
+```
 pip install group-terminal
 ```
 
@@ -35,7 +35,7 @@ Here's the essential code:
 
 examples/app.py
 
-```python
+```
 import asyncio
 
 from group_terminal.server import ChatServer
@@ -76,13 +76,13 @@ See the [complete example](https://github.com/gradion-ai/group-terminal/blob/mai
 
 Start the server:
 
-```bash
+```
 python examples/app.py
 ```
 
 In separate terminals, launch two clients with different usernames:
 
-```bash
+```
 python -m group_terminal.client --username alice
 python -m group_terminal.client --username bob
 ```
@@ -96,7 +96,7 @@ The screenshots below show a conversation where `alice` sends "Hey everyone! How
 
 ## group_terminal.server.ChatServer
 
-```python
+```
 ChatServer(host: str = 'localhost', port: int = 8723)
 ```
 
@@ -108,7 +108,7 @@ Example
 
 Basic server with a message handler::
 
-```text
+```
 async def handle_message(content: str, username: str):
     print(f"Received '{content}' from {username}")
 
@@ -129,7 +129,7 @@ Parameters:
 
 ### add_handler
 
-```python
+```
 add_handler(handler: MessageHandler)
 ```
 
@@ -145,7 +145,7 @@ Parameters:
 
 ### start
 
-```python
+```
 start()
 ```
 
@@ -155,7 +155,7 @@ Returns immediately after launching the server task. The server runs in the back
 
 ### stop
 
-```python
+```
 stop()
 ```
 
@@ -165,7 +165,7 @@ Signals the server to shut down and waits for the server task to complete.
 
 ### join
 
-```python
+```
 join()
 ```
 
@@ -175,7 +175,7 @@ Blocks until stop is called from another task. If you have other means to keep y
 
 ## group_terminal.server.MessageHandler
 
-```python
+```
 MessageHandler = Callable[[str, str], Awaitable[None]]
 ```
 
@@ -192,7 +192,7 @@ Parameters:
 
 ## group_terminal.client.ChatClient
 
-```python
+```
 ChatClient(username: str, host: str = 'localhost', port: int = 8723, **terminal_kwargs)
 ```
 
@@ -218,7 +218,7 @@ Parameters:
 
 ### connect
 
-```python
+```
 connect() -> bool
 ```
 
@@ -226,7 +226,7 @@ Connect to the chat server.
 
 ### join
 
-```python
+```
 join()
 ```
 

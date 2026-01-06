@@ -650,8 +650,8 @@
 
 
 </h2>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">ChatServer</span><span class="p">(</span><span class="n">host</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span> <span class="o">=</span> <span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="n">port</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span> <span class="o">=</span> <span class="mi">8723</span><span class="p">)</span>
-</span></code></pre></div>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">ChatServer</span><span class="p">(</span><span class="n">host</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span> <span class="o">=</span> <span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="n">port</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a></span> <span class="o">=</span> <span class="mi">8723</span><span class="p">)</span>
+</code></pre></div>
 
     <div class="doc doc-contents first">
 
@@ -666,7 +666,7 @@ not allowed.</p>
 <details class="example" open>
   <summary>Example</summary>
   <p>Basic server with a message handler::</p>
-<div class="language-text highlight"><pre><span></span><code>async def handle_message(content: str, username: str):
+<div class="highlight"><pre><span></span><code>async def handle_message(content: str, username: str):
     print(f&quot;Received &#39;{content}&#39; from {username}&quot;)
 
 server = ChatServer(host=&quot;0.0.0.0&quot;, port=8723)
@@ -754,8 +754,8 @@ Use "0.0.0.0" to accept connections from any network interface.</p>
 
 
 </h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">add_handler</span><span class="p">(</span><span class="n">handler</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" href="#group_terminal.server.MessageHandler">MessageHandler</a></span><span class="p">)</span>
-</span></code></pre></div>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">add_handler</span><span class="p">(</span><span class="n">handler</span><span class="p">:</span> <span class="n"><a class="autorefs autorefs-internal" href="#group_terminal.server.MessageHandler">MessageHandler</a></span><span class="p">)</span>
+</code></pre></div>
 
     <div class="doc doc-contents ">
 
@@ -817,8 +817,8 @@ registration order for each message.</p>
   </span>
 
 </h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">start</span><span class="p">()</span>
-</span></code></pre></div>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">start</span><span class="p">()</span>
+</code></pre></div>
 
     <div class="doc doc-contents ">
 
@@ -843,8 +843,8 @@ in the background and begins accepting WebSocket connections.</p>
   </span>
 
 </h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">stop</span><span class="p">()</span>
-</span></code></pre></div>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">stop</span><span class="p">()</span>
+</code></pre></div>
 
     <div class="doc doc-contents ">
 
@@ -868,8 +868,8 @@ in the background and begins accepting WebSocket connections.</p>
   </span>
 
 </h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">join</span><span class="p">()</span>
-</span></code></pre></div>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">join</span><span class="p">()</span>
+</code></pre></div>
 
     <div class="doc doc-contents ">
 
@@ -904,8 +904,8 @@ calling <a class="autorefs autorefs-internal" href="#group_terminal.server.ChatS
   </span>
 
 </h2>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">MessageHandler</span> <span class="o">=</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span><span class="p">],</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Awaitable" href="https://docs.python.org/3/library/typing.html#typing.Awaitable">Awaitable</a></span><span class="p">[</span><span class="kc">None</span><span class="p">]]</span>
-</span></code></pre></div>
+<div class="doc-signature highlight"><pre><span></span><code><span class="n">MessageHandler</span> <span class="o">=</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Callable" href="https://docs.python.org/3/library/typing.html#typing.Callable">Callable</a></span><span class="p">[[</span><span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span><span class="p">,</span> <span class="n"><a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a></span><span class="p">],</span> <span class="n"><a class="autorefs autorefs-external" title="typing.Awaitable" href="https://docs.python.org/3/library/typing.html#typing.Awaitable">Awaitable</a></span><span class="p">[</span><span class="kc">None</span><span class="p">]]</span>
+</code></pre></div>
 
     <div class="doc doc-contents first">
 
@@ -999,7 +999,7 @@ tasks to avoid blocking the message receiver loop.</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2025 Gradion AI
+      Copyright &copy; 2025-2026 Gradion AI
     </div>
   
   

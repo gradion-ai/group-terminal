@@ -1,6 +1,6 @@
 ## group_terminal.server.ChatServer
 
-```python
+```
 ChatServer(host: str = 'localhost', port: int = 8723)
 ```
 
@@ -12,7 +12,7 @@ Example
 
 Basic server with a message handler::
 
-```text
+```
 async def handle_message(content: str, username: str):
     print(f"Received '{content}' from {username}")
 
@@ -33,7 +33,7 @@ Parameters:
 
 ### add_handler
 
-```python
+```
 add_handler(handler: MessageHandler)
 ```
 
@@ -49,7 +49,7 @@ Parameters:
 
 ### start
 
-```python
+```
 start()
 ```
 
@@ -59,7 +59,7 @@ Returns immediately after launching the server task. The server runs in the back
 
 ### stop
 
-```python
+```
 stop()
 ```
 
@@ -69,7 +69,7 @@ Signals the server to shut down and waits for the server task to complete.
 
 ### join
 
-```python
+```
 join()
 ```
 
@@ -79,7 +79,7 @@ Blocks until stop is called from another task. If you have other means to keep y
 
 ## group_terminal.server.MessageHandler
 
-```python
+```
 MessageHandler = Callable[[str, str], Awaitable[None]]
 ```
 

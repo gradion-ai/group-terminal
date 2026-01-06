@@ -1,6 +1,6 @@
 ## group_terminal.client.ChatClient
 
-```python
+```
 ChatClient(username: str, host: str = 'localhost', port: int = 8723, **terminal_kwargs)
 ```
 
@@ -26,7 +26,7 @@ Parameters:
 
 ### connect
 
-```python
+```
 connect() -> bool
 ```
 
@@ -34,7 +34,7 @@ Connect to the chat server.
 
 ### join
 
-```python
+```
 join()
 ```
 

@@ -10,7 +10,7 @@ Group Terminal uses [termios](https://docs.python.org/3/library/termios.html) fo
 
 ## Installation
 
-```bash
+```
 pip install group-terminal
 ```
 
@@ -22,7 +22,7 @@ Here's the essential code:
 
 examples/app.py
 
-```python
+```
 import asyncio
 
 from group_terminal.server import ChatServer
@@ -63,13 +63,13 @@ See the [complete example](https://github.com/gradion-ai/group-terminal/blob/mai
 
 Start the server:
 
-```bash
+```
 python examples/app.py
 ```
 
 In separate terminals, launch two clients with different usernames:
 
-```bash
+```
 python -m group_terminal.client --username alice
 python -m group_terminal.client --username bob
 ```
