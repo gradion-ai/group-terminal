@@ -84,7 +84,11 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - User Guide: index.md
+  - User Guide:
+    - Overview: index.md
+    - LLM readable:
+      - llms.txt: llms.txt
+      - llms-full.txt: llms-full.txt
   - API Documentation:
     - Server: api/server.md
     - Client: api/client.md
