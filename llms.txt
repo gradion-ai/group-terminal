@@ -11,7 +11,7 @@ immediate visual feedback. Unix-specific (uses termios, will not work on Windows
 
 ## User Guide
 
-- [User Guide](https://gradion-ai.github.io/group-terminal/index.md): Overview and getting started guide
+- [Overview](https://gradion-ai.github.io/group-terminal/index.md): Overview and getting started guide
 
 ## API Documentation
 
